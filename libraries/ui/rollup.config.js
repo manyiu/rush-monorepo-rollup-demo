@@ -4,7 +4,6 @@ import commonjs from "@rollup/plugin-commonjs";
 import typescript from "rollup-plugin-typescript2";
 import url from "@rollup/plugin-url";
 import svgr from "@svgr/rollup";
-// import babel from "@rollup/plugin-babel";
 
 const packageJson = require("./package.json");
 
@@ -22,23 +21,10 @@ export default {
       sourcemap: true,
     },
   ],
-  // external: ["react", "@mui/material/utils"],
   plugins: [
     peerDepsExternal(),
-    resolve({
-      // modulesOnly: true,
-    }),
-    commonjs({
-      // include: [/node_modules/],
-      // defaultIsModuleExports: true,
-      // esmExternals: true,
-      // requireReturnsDefault: true,
-    }),
-    // babel({
-    //   // exclude: "node_modules/**",
-    //   presets: ["@babel/preset-react"],
-    //   babelHelpers: "bundled",
-    // }),
+    resolve(),
+    commonjs(),
     url(),
     svgr(),
     typescript({ useTsconfigDeclarationDir: true, check: false }),

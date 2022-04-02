@@ -5,6 +5,7 @@ import TextFieldProps from "./TextField.types";
 const StyledContainer = styled("div")``;
 const StyledLabel = styled("p")`
   color: ${(props) => props.theme.typography.body1.color};
+  background-color: ${(props) => props.theme.palette.primaryButtonColor1.main};
   font-size: ${(props) => props.theme.typography.body1.fontSize};
   text-align: left;
 `;

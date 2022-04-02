@@ -12,6 +12,7 @@ function App() {
         error={false}
         value="I am a boy!"
       />
+      Real React
     </div>
   );
 }
