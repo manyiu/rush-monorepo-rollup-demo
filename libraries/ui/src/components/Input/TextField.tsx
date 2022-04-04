@@ -11,6 +11,7 @@ const StyledLabel = styled("p")`
 `;
 
 const StyledTextField = styled(TextField)`
+  background-color: ${(props) => props.theme.palette.primaryButtonColor1.main};
   & input::placeholder {
     font-style: ${(props) => props.theme.typography.caption.fontStyle};
     color: ${(props) => props.theme.typography.caption.color};

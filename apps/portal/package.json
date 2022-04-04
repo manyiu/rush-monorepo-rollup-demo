@@ -15,10 +15,7 @@
     "react-scripts": "^5.0.0",
     "typescript": "^4.6.3",
     "web-vitals": "^2.1.4",
-    "@frontend/ui": "workspace:*",
-    "@emotion/react": "~11.8.2",
-    "@emotion/styled": "~11.8.1",
-    "@mui/material": "~5.5.3"
+    "@frontend/ui": "workspace:*"
   },
   "scripts": {
     "start": "react-scripts start",
